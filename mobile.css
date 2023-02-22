@@ -1,0 +1,110 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-width: 320px;
+    width: 100%;
+    max-width: 1080px;
+}
+.comms a{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: right;
+}
+a .lock{
+    width: 20px;
+    height: auto;
+}
+.main-header{
+    background-color: var(--purple);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-buttons button{
+    background-color: rgba(0,0,0,0);
+    border: white 2px solid;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.header-buttons button img{
+    width: 15px;
+    height: auto;
+}
+.banner{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.shine{
+    background-color: rgb(202, 201, 201);
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.shine p{
+    text-align: center;
+    color: var(--purple);
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.cajas{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.purple-boxes{
+    width: 100%;
+    height: auto;
+    background-color: var(
+    --purple);
+    padding: 10px;
+}
+.purple-boxes p{
+    text-align: center;
+    color: #f8f9fa;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
