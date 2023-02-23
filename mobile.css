@@ -29,7 +29,7 @@
     --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 *{
-    box-sizing: 0;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -91,6 +91,7 @@ a .lock{
 }
 .cajas{
     padding: 10px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,13 +99,36 @@ a .lock{
 .purple-boxes{
     width: 100%;
     height: auto;
-    background-color: var(
-    --purple);
-    padding: 10px;
+    background-color: var(--purple);
+    padding: 25px;
+    margin-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
-.purple-boxes p{
+.purple-boxes .purple-box-description{
     text-align: center;
     color: #f8f9fa;
     font-size: 1.9rem;
     font-weight: 600;
+    margin-bottom: 15px;
+}
+.purple-boxes a{
+    align-self: center;
+}
+.purple-boxes a button{
+    background-color: rgba(0,0,0,0);
+    width: 125px;
+    height: 35px;
+    border: #f8f9fa 1px solid;
+    border-radius: 25px;
+}
+.purple-boxes a button p{
+    font-size: 1.6rem;
+    font-weight: 200;
+    text-decoration: underline;
+    color: #f8f9fa;
 }
