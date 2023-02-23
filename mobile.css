@@ -132,3 +132,69 @@ a .lock{
     text-decoration: underline;
     color: #f8f9fa;
 }
+.purple-boxes select{
+    background-color: rgba(0,0,0,0);
+    width: 125px;
+    height: 35px;
+    border: #f8f9fa 1px solid;
+    border-radius: 25px;
+    align-self: center;
+}
+.purple-boxes select option{
+    text-align: center;
+}
+.lib-nat-coverage{
+    padding: 0 10px;
+}
+.lib-nat-coverage h1{
+    color: var(--indigo);
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.lib-nat-coverage p{
+    font-size: 1.6rem;
+    margin: 10px 0;
+}
+.state-selection{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.state-selection select{
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+}
+.state-selection select option{
+    text-align: center;
+}
+.state-selection button{
+    background-color: var(--purple);
+    width: 90px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    color: #f8f9fa;
+    font-weight: 700;
+}
+.lib-news{
+    padding: 10px;
+}
+.lib-news h1{
+    color: var(--indigo);
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.lib-news div{
+    margin-top: 10px;
+    color: var(--secondary);
+    font-size: 1.8rem;
+    border-bottom: 1px gray solid;
+}
+.view-news{
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+    margin: 15px 0;
+}
