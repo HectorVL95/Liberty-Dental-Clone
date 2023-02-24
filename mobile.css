@@ -186,15 +186,158 @@ a .lock{
     font-size: 3.2rem;
     font-weight: 500;
 }
-.lib-news div{
+.lib-news .news-article{
     margin-top: 10px;
     color: var(--secondary);
     font-size: 1.8rem;
     border-bottom: 1px gray solid;
 }
 .view-news{
-    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+.view-news a{
     font-size: 2rem;
-    padding: 15px;
     margin: 15px 0;
+    text-align: center;
+}
+.get-most-from-lib{
+    padding: 10px;
+    background-color: var(--light);
+}
+.get-most-from-lib h1{
+    color: var(--indigo);
+    font-size: 3.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.get-most-from-lib p{
+    color: var(--indigo);
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 10px 0;
+}
+.get-most-from-lib .tools{
+    background-color: var(--white
+    );
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 15px;
+}
+.tools h3{
+    font-size: 2.2rem;  
+}
+.tools div{
+    display: flex;
+    margin: 5px 0;
+}
+.tools ul li{
+    color: black;
+    list-style: none;
+    font-size: 1.6rem;
+}
+.tools img{
+    float: none;
+}
+.tools a .purple-button{
+    background-color: var(--purple);
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.purple-yellow-buttons{
+    position: relative;
+    right: 30px;    
+}
+.tools .purple-yellow-buttons a .purple-button{
+    background-color: var(--purple);
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.tools .purple-yellow-buttons a .yellow-button{
+    background-color: var(--yellow);
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: black;
+    text-decoration: underline;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.tools p{
+    color: black;
+    font-size: 1.4rem;
+}
+.signUp-Quote{
+    background-color: var(--light);
+    padding: 15px 0;
+}
+.signUp-Quote .become-provider{
+    background-color: #F2F2ED;
+    padding: 25px 15px;
+}
+.become-provider h1{
+    color: var(--indigo);
+    font-size: 2.7rem;
+}
+.become-provider p{
+    color: black;
+    font-size: 1.6rem;
+    margin-top: 12px;
+}
+.become-provider a button{
+    background-color: var(--purple);
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-weight: 800;
+    margin: 10px 0;
+}
+.get-quote{
+    margin-top: 25px;
+    background-color: #F2F2ED;
+    padding: 25px
+}
+.get-quote div{
+    background-color: var(--purple);
+    padding: 15px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.get-quote div h2{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 500;
+}
+.get-quote div p{
+    margin-top: 15px;
+    color: white;
+    font-size: 1.6rem;
+}
+.get-quote div a button{
+    background-color: rgba(0,0,0,0);
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    border: white 1px solid;
+    color: white;
+    text-decoration: underline;
+    font-weight: 800;
+    margin: 10px 0;
 }
