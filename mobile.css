@@ -341,3 +341,54 @@ a .lock{
     font-weight: 800;
     margin: 10px 0;
 }
+.lib-app{
+    background-color: var(--indigo);
+    padding: 25px 15px;
+}
+.lib-app h1{
+    text-align: center;
+    color: white;
+    font-size: 2.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.lib-app .app-description{
+    color: white;
+    font-size: 1.6rem;
+}
+.lib-app .app-download{
+    color: white;
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+.store-icons a img{
+    width: 120px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.certs{
+    padding: 15px;
+}
+.certs h1{
+    font-size: 2rem;
+    font-weight: 400; 
+    color: var(--purple);
+    margin-bottom: 40px;
+}
+.cert div{
+    display: flex;
+    justify-content: space-around;
+}
+.certs div img{
+    width: 50px;
+    height: auto;
+}
+.certs p{
+    color: var(--purple);
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
