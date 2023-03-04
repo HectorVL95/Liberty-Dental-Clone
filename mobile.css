@@ -69,6 +69,36 @@ a .lock{
     width: 15px;
     height: auto;
 }
+.inactive {
+    display: none;
+}
+.threelines-menu-list li{
+    list-style: none;
+}
+.threelines-menu-list li ul{
+    display: flex;
+    flex-direction:column;
+    
+}
+
+.threelinesmenu div{
+    background-color: aliceblue;
+    padding: 10px 20px;
+    border: 1px gray solid;
+    width: 190px;
+    height: auto;
+    
+}
+.threelinesmenu div li{
+    margin-bottom: 20px;
+
+}
+
+.arrow-dowm{
+    width: 10px;
+    height: auto;
+    margin-left: 10px;
+}
 .banner{
     margin-top: 5px;
     margin-bottom: 5px;
