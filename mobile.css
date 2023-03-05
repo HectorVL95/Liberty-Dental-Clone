@@ -70,7 +70,7 @@ a .lock{
     height: auto;
 }
 .inactive {
-    display: none;
+   display: none;
 }
 .threelines-menu-list li{
     list-style: none;
@@ -80,7 +80,9 @@ a .lock{
     flex-direction:column;
     
 }
-
+.threelinesmenu{
+    margin-bottom: 10px;
+}
 .threelinesmenu div{
     background-color: aliceblue;
     padding: 10px 20px;
