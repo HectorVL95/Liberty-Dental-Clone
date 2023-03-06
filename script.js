@@ -1,16 +1,10 @@
-var threelinesbtn = document.querySelector('.threelines-menu')
-var inactive = document.getElementsByClassName('inactive')
-var threelinesMenuList = document.querySelector('.threelines-menu-list')
-var threelinesMenuListItem = document.querySelector('.threelinesmenu')
-var threeLinesmenuInsideItems = document.querySelector('.threelines-menu-items')
+var threeLinesBtn = document.querySelector('.threelines-menu');
+var navBarMenu = document.querySelector('nav-bar-menu');
+var inactive = document.querySelector('.inactive');
+var navLinkItem = document.querySelector('.nav-link-item');
+var inactiveChild = document.querySelector('.inactive-child');
 
-
-threelinesbtn.addEventListener('click', threelinesbtnclick)
-function threelinesbtnclick(){
-    threelinesMenuList.classList.toggle('inactive')
-};
-
-threelinesMenuListItem.addEventListener('click', threelinesMenuListItemclick)
-function threelinesMenuListItemclick(){
-    threeLinesmenuInsideItems.classList.toggle('inactive')
-};
+threeLinesBtn.addEventListener('click', toggleNavBarMenu )
+function toggleNavBarMenu(){
+    navBarMenu.classList.toggle('inactive')
+}

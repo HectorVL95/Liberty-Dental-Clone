@@ -42,6 +42,8 @@ body{
     width: 100%;
     max-width: 1080px;
 }
+
+/* Header */
 .comms a{
     color: black;
     font-size: 1.8rem;
@@ -69,29 +71,29 @@ a .lock{
     width: 15px;
     height: auto;
 }
+
+/* Menu that pops up after clicking a three line button */
+
 .inactive {
-   display: none;
-}
-.threelines-menu-list li{
+    display: none;
+ }
+ .nav-bar-menu ul{
+    margin-left:  15px;
+    margin-top: 15px;
+ }
+.nav-bar-menu li{
     list-style: none;
 }
-.threelines-menu-list li ul{
-    display: flex;
-    flex-direction:column;
-    
-}
-.threelinesmenu{
-    margin-bottom: 10px;
-}
-.threelinesmenu div{
+.inactive-child{
     background-color: aliceblue;
     padding: 10px 20px;
     border: 1px gray solid;
     width: 190px;
     height: auto;
-    
+    margin-top: 10px;
+    margin-left: 30px;
 }
-.threelinesmenu div li{
+.inactive-child li{
     margin-bottom: 20px;
 
 }
@@ -101,6 +103,8 @@ a .lock{
     height: auto;
     margin-left: 10px;
 }
+
+/* Banner */
 .banner{
     margin-top: 5px;
     margin-bottom: 5px;
@@ -109,6 +113,8 @@ a .lock{
     width: 100%;
     height: auto;
 }
+
+/*Main Section*/
 .shine{
     background-color: rgb(202, 201, 201);
     padding: 5px;
@@ -128,6 +134,8 @@ a .lock{
     flex-direction: column;
     justify-content: center;
 }
+
+/* Purple Boxes Below Banner */
 .purple-boxes{
     width: 100%;
     height: auto;
@@ -175,6 +183,9 @@ a .lock{
 .purple-boxes select option{
     text-align: center;
 }
+
+/*Lib National Coverages and Liberty News*/
+
 .lib-nat-coverage{
     padding: 0 10px;
 }
@@ -233,6 +244,9 @@ a .lock{
     margin: 15px 0;
     text-align: center;
 }
+
+/*Get the most from Liberty Section*/
+
 .get-most-from-lib{
     padding: 10px;
     background-color: var(--light);
@@ -313,6 +327,9 @@ a .lock{
     color: black;
     font-size: 1.4rem;
 }
+
+/*Sign Up Quote*/
+
 .signUp-Quote{
     background-color: var(--light);
     padding: 15px 0;
@@ -373,6 +390,9 @@ a .lock{
     font-weight: 800;
     margin: 10px 0;
 }
+
+/*Lib App Section*/
+
 .lib-app{
     background-color: var(--indigo);
     padding: 25px 15px;
@@ -400,6 +420,9 @@ a .lock{
     margin-top: 20px;
     margin-left: 5px;
 }
+
+/*Certifications*/
+
 .certs{
     padding: 15px;
 }
