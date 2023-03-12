@@ -84,7 +84,7 @@ a .lock{
 .nav-bar-menu li{
     list-style: none;
 }
-.inactive-child{
+.nav-link-itemChild{
     background-color: aliceblue;
     padding: 10px 20px;
     border: 1px gray solid;
@@ -92,6 +92,9 @@ a .lock{
     height: auto;
     margin-top: 10px;
     margin-left: 30px;
+}
+.inactive-child{
+    display: none;
 }
 .inactive-child li{
     margin-bottom: 20px;
