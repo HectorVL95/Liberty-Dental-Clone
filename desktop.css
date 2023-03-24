@@ -43,3 +43,118 @@
     position: relative;
     bottom: 50px;
 }
+
+/*Liberty National Coverage*/
+.lib-cov-news{
+    display: flex;
+    flex-direction: row;
+}
+.lib-nat-coverage{
+    border-right: 1px solid gray;
+}
+
+.lib-news{
+    padding-left: 30px;
+}
+
+/*Get most from liberty*/
+.member-provider-tools{
+    display: flex;
+    justify-content: space-around;
+}
+.member-provider-tools article{
+    width: 300px;
+}
+.get-most-from-lib .tools{
+    justify-content: center;
+}
+.member-tools{
+    position: relative;
+    left: 10px;
+}
+
+.purple-provider img{
+    position: relative;
+    right: 150px;
+}
+.dental-office-tools p{
+    text-align: left;
+}
+.do-tools{
+    position: relative;
+    left: 10px;
+}
+.purple-yellow-buttons{
+    position: relative;
+    left: 150px;
+}
+.dental-office-tools .purple-yellow-buttons a .purple-button{
+    width: 110px;
+    position: relative;
+    right: 150px;
+}
+.dental-office-tools .purple-yellow-buttons a .yellow-button{
+    width: 110px;
+    position: relative;
+    right: 150px;
+}
+
+/*Become a Liberty Provider*/
+.become-provider{
+    background-image: url(./assets/Providers.png);
+    background-position: 60% 2%;
+    display: flex;
+    width: auto;
+    height: 270px;
+}
+.become-provider-text{
+    width: 400px;
+    align-self: flex-start;
+}
+.become-provider-text p{
+    text-align: left;
+}
+/*Get a quote*/
+.get-quote{
+    background-image: url(./assets/couple.png);
+    display: flex;
+    justify-content: flex-end;
+}
+.get-quote div{
+    width: 250px;
+    background-color: rgb(111, 66, 194, .5);
+    align-self: flex-end;
+}
+
+/*Liberty App*/
+
+.lib-app{
+    background-image: url(./assets/phone-app.png);
+    background-position: 60% 0%;
+    background-size: cover;
+}
+.liberty-app-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+
+}
+
+/* Certifications */
+.certs{
+    display: flex;
+    padding: 100px 0;
+}
+.certs-title{
+    display: flex;
+    align-self: center;
+}
+.certs .certs-images img{
+    width: 100px;
+}
+.certs-miscelaneus p{
+    text-align: end;
+    position: relative;
+    top: 90px;
+}

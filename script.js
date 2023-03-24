@@ -8,6 +8,7 @@ var userButton = document.querySelector('.user-button')
 var userTools = document.querySelector('.user-tools')
 var footerUl = document.querySelectorAll('.footer-ul')
 var footerli = document.querySelectorAll('.footer-li')
+var usaMap = document.querySelector('.usa-map')
 
 /*Clicking threelines button */
 threelinesbtn.addEventListener('click', threelinesbtnclick)
@@ -73,4 +74,37 @@ for(let i= 0; i < footerUl.length; i++){
             footerli[i].classList.toggle('inactive')
         }
     }
+}
+
+/* Disapearing map */
+function showUsaMap(x){
+    if(x.matches){
+        usaMap.classList.remove('inactive')
+    }
+    else{
+        usaMap.classList.add('inactive')
+    }
+}
+
+var x = window.matchMedia("(min-width: 900px)")
+showUsaMap(x)
+x.addListener(showUsaMap);
+
+
+/* Disappearing dowpdown arros of UL footer */
+
+/* Disappering footer List items */
+for(let i =0; i < footerli.length; i++){
+    function showfooterLi(e){
+        if(e.matches){
+            footerli[i].classList.remove('inactive')
+        }
+        else{
+            footerli[i].classList.add('inactive')
+        }
+    }
+    
+    var e = window.matchMedia("(min-width: 900px)")
+    showfooterLi(e)
+    e.addListener(showfooterLi);
 }
