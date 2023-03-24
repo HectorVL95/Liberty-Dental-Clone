@@ -1,0 +1,45 @@
+.threelines-menu{
+    display: none;
+}
+
+/* Navbar Menu */
+
+.nav-bar-menu .inactive{
+    display: block;
+}
+
+/*Making members Shine*/
+.shine{
+    background-position: center;
+    background-size: cover;
+    background-image: url(./assets/family.jpg);
+    width: auto;
+    height: 300px;
+}
+.fade{
+    -webkit-animation: 1.5s fade;
+    animation: 1.5s fade;
+}
+@-webkit-keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+/* cajas */
+.cajas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.cajas .purple-boxes{
+    width: 210px;
+    height: 140px;
+    position: relative;
+    bottom: 50px;
+}

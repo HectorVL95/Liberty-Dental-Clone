@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liberty Dental Clone</title>
     <link rel="stylesheet" href="./mobile.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="./tablet.css" >
+    <link rel="stylesheet" href="./desktop.css" media="(min-width:900px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -13,23 +15,33 @@
 <body>
     <header>
         <section class="comms">
-            <a href="https://securemail4.libertydentalplan.com/securereader/init.jsf?brand=e7149025"><img class="lock" src="/assets/lock-svgrepo-com.svg" alt="">Secure Email</a>
+            <a href="https://securemail4.libertydentalplan.com/securereader/init.jsf?brand=e7149025"><img class="lock" src="./assets/lock-svgrepo-com.svg" alt="">Secure Email</a>
             <a href="https://www.libertydentalplan.com/Members/File-a-Grievance-or-Appeal.aspx">Grievance Forms</a>
             <a href="https://www.libertydentalplan.com/About-LIBERTY/Privacy-1/Request-Confidential-Communications.aspx">Confidential Communications</a>
         </section>
         <section class="main-header">
             <div class="logo">
-                <a href="https://www.libertydentalplan.com/"><img src="/assets/r-stacked-horizontal-small.png" alt="LDP Logo"></a>
+                <a href="https://www.libertydentalplan.com/"><img src="./assets/r-stacked-horizontal-small.png" alt="LDP Logo"></a>
             </div>
             <div class="header-buttons">
-                <button><img src="/assets/user-svgrepo-com.svg" alt=""></button>
-                <button class="threelines-menu"><img src="/assets/menu-lines-svgrepo-com.svg" alt=""></button>
+                <button class="user-button"><img src="./assets/user-svgrepo-com.svg" alt="">
+                </button>
+                <button class="threelines-menu"><img src="./assets/menu-lines-svgrepo-com.svg" alt=""></button>
+                <div class="user-tools inactive">
+                    <ul>
+                        <li>Member</li>
+                        <li>Group</li>
+                        <li>Dental Office</li>
+                        <li>Vendor</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <div class="nav-bar-menu inactive">
             <ul class="nav-link-item"> 
                 <p>Members <img class='arrow-dowm' src="./assets/arrow-down.svg" alt=""></p>
-                <div class="nav-link-itemChild inactive-child">
+
+                <div class="nav-link-itemChild inactive-child" >
                     <li><a href="#">Welcome to Member Services!</a></li>
                     <li><a href="#">Find a Dentist</a></li>
                     <li><a href="#">Community Smiles Porgram</a></li>
@@ -117,7 +129,7 @@
             </ul>
     
     
-            <ul class="nav-link-item">
+            <ul class="nav-link-item-F">
                 <a href="#">Find a Dentist</a>
             </ul>
     
@@ -142,7 +154,7 @@
     </header>
     <main>
         <section class="making-mem-shine">
-            <article class="shine">
+            <article class="shine fade">
                 <p>Making members shine, one smile at the time ™</p>
             </article>
             <div class="cajas">
@@ -183,7 +195,7 @@
                     <option value="">Oklahoma</option>
                     <option value="">Texas</option>
                 </select>
-                <button>Go</button>
+                <button class="">Go</button>
             </div>
         </Section>
         <section class="lib-news">
@@ -200,30 +212,39 @@
             <h1>Get the most from your LIBERTY experience</h1>
             <p>Create you LIBERTY Dental account to acess our online tools.</p>
             <article class="tools">
+                <div class="member-tools">
                 <h3>Member tools</h3>
-                <div>
                  <ul>
                     <li>Check your eligibility</li>
                     <li>View claims status</li>
                     <li>View your plan benefits</li>
                     <li>Print or request an ID card</li>
                  </ul>
-                <img src="/assets/purple-hands.png" alt="Purple Hands">
+                 <a href="https://itransact.libertydentalplan.com/LBT/iTransact/Logon/CreateAccounts.aspx"><button class="purple-button">Create Account</button></a>
+                 <p>Already Registered ? <a href="https://itransact.libertydentalplan.com/LBT/iTransact/Logon/Logon.aspx">Member Login</a></p>
+                </div class>
+                <div class="tools-image">
+                <img src="./assets/purple-hands.png" alt="Purple Hands">
                 </div>
-                <a href="https://itransact.libertydentalplan.com/LBT/iTransact/Logon/CreateAccounts.aspx"><button class="purple-button">Create Account</button></a>
-                <p>Already Registered ? <a href="https://itransact.libertydentalplan.com/LBT/iTransact/Logon/Logon.aspx">Member Login</a></p>
+
+
             </article>
-            <article class="tools">
-                <h3>Dental Office Tools</h3>
-                <div>
-                    <ul>
-                        <li>Check ligibility</li>
-                        <li>Submit claims</li>
-                        <li>View claims status</li>
-                        <li>Submit Referral</li>
-                    </ul>
-                    <img src="/assets/purple-provider.png" alt="Purple Provider">
+            <article class="dental-office-tools">
+                <div class="do-tools">
+                    <div class="do-tools-ul">
+                        <h3>Dental Office Tools</h3>
+                        <ul>
+                            <li>Check ligibility</li>
+                            <li>Submit claims</li>
+                            <li>View claims status</li>
+                            <li>Submit Referral</li>
+                        </ul>
+                    </div>
+                    <div class="purple-provider">
+                        <img src="./assets/purple-provider.png" alt="Purple Provider">
+                    </div>
                 </div>
+
                 <div class="purple-yellow-buttons">
                     <a href="https://itransact.libertydentalplan.com/LBT/iTransact/Logon/CreateAccounts.aspx"><button class="purple-button">Create Account</button></a>
                     <a href="https://www.libertydentalplan.com/Resources/Videos/ProviderPortal.mp4"><button class="yellow-button">Video Tutorial</button></a>
@@ -250,26 +271,91 @@
             <p class="app-description">The LIBERTY Dental mobile app offers a quick and easy way to access your member account information and puts our most popular online features at your fingertips.</p>
             <p class="app-download">Download our free mobile app available at:</p>
             <div class="store-icons">
-                <a href="https://play.google.com/store/apps/details?id=com.libertydentalplan.mobile"><img src="/assets/GooglePlay_Icon.svg" alt="Google Play"></a>
-                <a href="https://apps.apple.com/gb/app/liberty-dental/id1443527723"><img src="/assets/AppStore_Icon.svg" alt="App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.libertydentalplan.mobile"><img src="./assets/GooglePlay_Icon.svg" alt="Google Play"></a>
+                <a href="https://apps.apple.com/gb/app/liberty-dental/id1443527723"><img src="./assets/AppStore_Icon.svg" alt="App Store"></a>
             </div>
         </section>
         <section class="certs">
             <h1>LIBERTY Dental Plan is accredited and certified by:</h1>
             <div>
-                <img class="accred-agency" src="/assets/logo-URAC-Accreditation-Seal.png" alt="Urac" onclick="window.location.href='https://www.urac.org/';">
-                <img class="accred-agency" src="/assets/logo-HiTrust.png" alt="HITrust" onclick="window.location.href='https://hitrustalliance.net/';">
-                <img class="accred-agency" src="/assets/NCQA-HEDIS-Compliance-Audit-Seal-2021.png" alt="NCQA" onclick="window.location.href='https://www.ncqa.org/programs/health-plans/health-plan-accreditation-hpa/';">
-                <img class="accred-agency" src="/assets/logo-AICPA-SOC.png" alt="Aicpa" onclick="window.location.href='https://www.aicpa.org/home';">
+                <img class="accred-agency" src="./assets/logo-URAC-Accreditation-Seal.png" alt="Urac" onclick="window.location.href='https://www.urac.org/';">
+                <img class="accred-agency" src="./assets/logo-HiTrust.png" alt="HITrust" onclick="window.location.href='https://hitrustalliance.net/';">
+                <img class="accred-agency" src="./assets/NCQA-HEDIS-Compliance-Audit-Seal-2021.png" alt="NCQA" onclick="window.location.href='https://www.ncqa.org/programs/health-plans/health-plan-accreditation-hpa/';">
+                <img class="accred-agency" src="./assets/logo-AICPA-SOC.png" alt="Aicpa" onclick="window.location.href='https://www.aicpa.org/home';">
             </div>
             <p>Last Date of Update 12/22/2021</p>
         </section>
     </main>
     <footer>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section>
+            <ul>
+                <div class="footer-ul">
+                    Explore
+                    <img class="circle-down" src="./assets/circle-chevron-down-svgrepo-com.svg" alt="">
+                </div>
+                <div class="footer-li inactive">
+                    <li><a href="#">Members</a></li>
+                    <li><a href="#">Providers</a></li>
+                    <li><a href="#">Brokers</a></li>
+                </div>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <div class="footer-ul">
+                    Programs
+                    <img class="circle-down" src="./assets/circle-chevron-down-svgrepo-com.svg" alt="">
+                </div>
+                <div class="footer-li inactive">
+                    <li><a href="#">Medicaid</a></li>
+                    <li><a href="#">Medi-cal</a></li>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">Individual & Family Plans</a></li>
+                    <li><a href="#">Get a Quote</a></li>
+                </div>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <div class="footer-ul">
+                    About
+                    <img class="circle-down" src="./assets/circle-chevron-down-svgrepo-com.svg" alt="">
+                </div>
+                <div class="footer-li inactive">
+                    <li><a href="#">Overview</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Compliance</a></li>
+                    <li><a href="#">Leadership</a></li>
+                    <li><a href="#">News and Events</a></li>
+                    <li><a href="#">Interoperability API</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <div class="footer-ul">
+                    Member Resources
+                    <img class="circle-down" src="./assets/circle-chevron-down-svgrepo-com.svg" alt="">
+                </div>
+                <div class="footer-li inactive">
+                    <li><a href="#">Contact Member Services</a></li>
+                    <li><a href="#">Find a Dentist</a></li>
+                    <li><a href="#">Download Mobile App</a></li>
+                    <li><a href="#">Member Login</a></li>
+                </div>
+            </ul>
+        </section>
+        <section class="social-media">
+            <div class="lib--dent">
+                <p>© 2023 LIBERTY Dental Plan</p>
+            </div>
+            <div class="social-media-icons">
+                <a href="#"><img src="./assets/instagram-svgrepo-com.svg" alt="Instagram"></a>
+                <a href="#"><img src="./assets/facebook-svgrepo-com.svg" alt="Facebook"></a>
+            </div>
+            
+        </section>
     </footer>
     <script src="./script.js"></script>
 </body>

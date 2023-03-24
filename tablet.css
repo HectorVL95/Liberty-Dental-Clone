@@ -1,0 +1,71 @@
+body{
+    max-width: 768px;
+}
+.comms{
+    display: flex;
+    justify-content: center;
+}
+.comms a{
+    margin: 0 15px;
+}
+
+/* Menu that pops up after clicking a three line button */
+.nav-bar-menu .nav-link-item{
+    display: flex;
+}
+.nav-link-itemChild{
+    position: relative;
+    right: 120px;
+    top: 13px;
+}
+
+/*Boxes*/
+.cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: unset;
+}
+.cajas .purple-boxes{
+    width: 350px;
+    height: 200px;
+}
+.lib-nat-coverage h1, p{
+    text-align: center;
+}
+.state-selection{
+    justify-content: center;
+}
+.state-selection select{
+    margin-right: 15px;
+}
+
+/*Member Tools*/
+.member-tools{
+    position: relative;
+    right: 170px;
+}
+.tools-image{
+    align-items: flex-end;
+}
+
+/*Provider Tools*/
+.do-tools{
+    position: relative;
+    right: 100px;
+}
+.purple-provider{
+    position: relative;
+    left: 150px;
+}
+.purple-yellow-buttons{
+    justify-content: flex-start;
+}
+.purple-yellow-buttons .purple-button{
+    position: relative;
+    right: 120px;
+}
+.purple-yellow-buttons .yellow-button{
+    position: relative;
+    right: 230px;
+}
