@@ -1,13 +1,38 @@
 .threelines-menu{
     display: none;
 }
+.header-buttons button{
+    width: 130px;
+    height: 40px;
+    border-radius: 25px;
+}
+.user-button p{
+    display: block;
+}
+.whiteArrowDown{
+    display: block;
+}
 
 /* Navbar Menu */
-
+.nav-bar-menu{
+    display: flex;
+    justify-content: space-around;
+}
 .nav-bar-menu .inactive{
     display: block;
 }
 
+.arrow-dowm{
+    display: none;
+}
+.nav-link-item p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.nav-link-item-F a{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
 /*Making members Shine*/
 .shine{
     background-position: center;
@@ -15,6 +40,9 @@
     background-image: url(./assets/family.jpg);
     width: auto;
     height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .fade{
     -webkit-animation: 1.5s fade;
@@ -55,6 +83,7 @@
 
 .lib-news{
     padding-left: 30px;
+    line-height: 25px;
 }
 
 /*Get most from liberty*/
@@ -157,4 +186,46 @@
     text-align: end;
     position: relative;
     top: 90px;
+}
+/*Footer*/
+.logo-and-list{
+    display: flex;
+    justify-content: space-between;
+}
+.ldp-logoVert{
+    padding: 25px;
+}
+.various-Uls{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.various-Uls section{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.footer-ul p{
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.footer-li{
+    background-color: var(--indigo);
+}
+.footer-li li a{
+    color: white;
+}
+.circle-down{
+    display: none;
+}
+.arrowUp{
+    padding: 25px;
+}
+.whiteArrowUp{
+    width: 25px;
+    height: auto;
+    display: block;
+}
+.whiteArrowUp:hover{
+    cursor: pointer;
 }

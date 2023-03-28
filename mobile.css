@@ -40,7 +40,8 @@ html{
 body{
     min-width: 320px;
     width: 100%;
-    margin: 0 auto
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 /* Header */
@@ -49,8 +50,6 @@ body{
     font-size: 1.8rem;
     font-weight: 700;
     text-align: right;
-    text-align: center;
-    margin: 0 10pxx;
 }
 a .lock{
     width: 20px;
@@ -62,93 +61,74 @@ a .lock{
     display: flex;
     justify-content: space-between;
 }
+.header-buttons{
+    display: flex;
+    align-items: center;
+
+}
 .header-buttons button{
     background-color: rgba(0,0,0,0);
     border: white 2px solid;
     border-radius: 4px;
     padding: 5px;
+    height: 30px;
     margin-left: 10px;
 }
 .header-buttons button img{
     width: 15px;
     height: auto;
 }
-/*List for User*/
-.user-tools{
-    background-color: var(--light);
-    padding: 0 10px;
-    width: 100px;
-    height: 120px;
-    position: absolute;
-    right: 10px;
-    
+.userbtn-tools{
 }
-.inactive-usertools{
+.user-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-button p{
+    color: white;
+    font-weight: 600;
     display: none;
 }
+.whiteArrowDown{
+    display: none;
+}
+/*User tools that pop up after clicking user button*/
+.user-tools{
+    background-color: var(--light);
+    padding: 10px;
+    line-height: 20px;
+    position: absolute;
+    border-radius: 4px;
+    align-self: center;
+}
+
 .user-tools ul{
     list-style: none;
-    line-height: 30px;
+    font-weight: 600;
+    text-decoration: underline;
 }
-.user-tools ul li{
-    font-size: 1.4rem;
-}
+
 /* Menu that pops up after clicking a three line button */
 
 .inactive {
     display: none;
  }
- .nav-bar-menu .nav-link-item{
+ .nav-bar-menu ul{
     margin-left:  15px;
-    margin-top: 15px;
-    font-size: 1.6rem;
-    text-decoration: underline;
-    font-weight: 700;
-    color: black;
-    
+    margin-top: 15px;s
  }
- .nav-link-item-F{
-    margin-left:  15px;
-    margin-top: 15px;
-    font-size: 1.6rem;
-    text-decoration: underline;
-    font-weight: 700;
-    color: black;
- }
-.nav-link-item-F:visited {
-    text-decoration: none; color:black; 
-}
-.nav-link-item-F:hover { 
-    text-decoration: none; color:black; 
-}
-.nav-link-item-F:focus { 
-    text-decoration: none; color:black; 
-}
-.nav-link-item-F:hover, .nav-link-item-F:active { 
-    text-decoration: none; color:black 
-}
 .nav-bar-menu li{
     list-style: none;
 }
-.nav-link-item:hover{
-    cursor: pointer;
-}
 .nav-link-itemChild{
-    background-color: whitesmoke;
+    background-color: aliceblue;
     padding: 10px 20px;
     border: 1px gray solid;
-    width: 280px;
+    width: 190px;
     height: auto;
     margin-top: 10px;
     margin-left: 30px;
-    position: relative;
-    right: 25px;
-}
-.nav-link-itemChild li a{
-    color: black;
-    font-weight: 400;
-    line-height: 35px;
-    font-size: 1.6rem;
 }
 .inactive-child{
     display: none;
@@ -232,6 +212,29 @@ a .lock{
     text-decoration: underline;
     color: #f8f9fa;
 }
+.explorebtn-med-ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.med-ul{
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 100px;
+    position: absolute;
+    top: 115px;
+    display: none;
+}
+.med-ul ul{
+    list-style: none;
+    line-height: 20px;
+    font-weight: 600;
+    align-self: center;
+
+}
 .purple-boxes select{
     background-color: rgba(0,0,0,0);
     width: 125px;
@@ -280,11 +283,6 @@ a .lock{
     border: none;
     color: #f8f9fa;
     font-weight: 700;
-    position: relative;
-    top:5px
-}
-.state-selection button:hover{
-    cursor: pointer;
 }
 .lib-news{
     padding: 10px;
@@ -328,8 +326,6 @@ a .lock{
     text-align: center;
     margin: 10px 0;
 }
-
-/*Member tools*/
 .get-most-from-lib .tools{
     background-color: var(--white
     );
@@ -337,27 +333,31 @@ a .lock{
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     margin-bottom: 15px;
-    display: flex;
-    justify-content: space-around;
 }
-.tools div h3{
+.tools{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tools h3{
     font-size: 2.2rem;  
 }
 .tools div{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     margin: 5px 0;
 }
-.tools div ul li{
+.tools ul li{
     color: black;
     list-style: none;
     font-size: 1.6rem;
-    line-height: 25px;
+}
+.tools img{
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 .tools-image img{
-    width: 100px;
-    height: auto;
+    width: 80px;
+    height: 80px;
 
 }
 .tools a .purple-button{
@@ -371,38 +371,32 @@ a .lock{
     font-weight: 800;
     margin: 10px 0;
 }
-/*Dental Office Tools*/
+.member-tools{
+    display: flex;
+    flex-direction: column;
+}
 .dental-office-tools{
-    background-color: var(--white
-    );
-    padding: 20px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    margin-bottom: 15px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white);
 }
-.dental-office-tools .do-tools{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.do-tools h3{
-    font-size: 2.2rem;
-}
-.do-tools ul{
-    list-style: none;
-    line-height: 25px;
-}
-.do-tools ul li{
-color: black;
-font-size: 1.6rem;
-}
-.dental-office-tools 
-.purple-yellow-buttons{
+.do-tools{
     display: flex;
     justify-content: space-evenly;
 }
-.dental-office-tools .purple-yellow-buttons a .purple-button{
+.do-tools-ul ul{
+    list-style: none;
+    line-height: 22px;
+    font-size: 1.6rem;
+}
+.purple-yellow-buttons{
+    position: relative;
+    right: 30px;    
+    display: flex;
+    align-self: center;
+}
+.purple-yellow-buttons a .purple-button{
     background-color: var(--purple);
     width: 160px;
     height: 50px;
@@ -412,8 +406,9 @@ font-size: 1.6rem;
     text-decoration: underline;
     font-weight: 800;
     margin: 10px 0;
+
 }
-.dental-office-tools .purple-yellow-buttons a .yellow-button{
+.purple-yellow-buttons a .yellow-button{
     background-color: var(--yellow);
     width: 160px;
     height: 50px;
@@ -438,10 +433,6 @@ font-size: 1.6rem;
 .signUp-Quote .become-provider{
     background-color: #F2F2ED;
     padding: 25px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .become-provider h1{
     color: var(--indigo);
@@ -466,18 +457,13 @@ font-size: 1.6rem;
 .get-quote{
     margin-top: 25px;
     background-color: #F2F2ED;
-    padding: 25px;
-
+    padding: 25px
 }
 .get-quote div{
     background-color: var(--purple);
     padding: 15px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .get-quote div h2{
     font-size: 2.5rem;
@@ -544,13 +530,12 @@ font-size: 1.6rem;
     font-weight: 400; 
     color: var(--purple);
     margin-bottom: 40px;
-    text-align: center;
 }
-.certs .certs-images{
+.cert div{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
-.certs .certs-images img{
+.certs div img{
     width: 50px;
     height: auto;
 }
@@ -562,52 +547,52 @@ font-size: 1.6rem;
     margin-top: 10px;
 }
 
-/*Footer*/
+/*FOOTER*/
 footer{
     background-color: var(--indigo);
+
 }
+
 .footer-ul{
-    list-style: none;
-    line-height: 35px;
-    color: var(--white);
-    text-decoration: underline;
-    font-size: 1.6rem;
-    font-weight: 500;
+    line-height: 25px;
+    display: flex;
+    justify-content: space-between;
     padding: 5px;
 }
+.footer-ul p{
+    color: var(--white);
+}
 .circle-down{
-    width: 20px;
+    width: 15px;
     height: auto;
-    float: right;
-    position: relative;
-    top: 5px;
 }
 .footer-li{
     background-color: var(--light);
-    
+    list-style: none;
+    line-height: 20px;
 }
 .footer-li li{
-    color: black;
-    border-bottom: var(--indigo) 1px solid;
-    line-height: 20px;
-    padding: 10px;
-    font-size: 15px;
-    list-style: none;
+    border: var(--indigo) 1px solid;
+    padding: 5px;
+    text-decoration: none;
 }
 .footer-li a{
-    color: black;
+    text-decoration: none;
+}
+.lib--dent p{
+    color: white;
 }
 .social-media{
     background-color: var(--purple);
-    padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
-.social-media .lib--dent p{
-    color: var(--white);
-    font-size: 1.5rem;
-}
-.social-media .social-media-icons img{
-    width: 20px;
+.social-media-icons img{
+    width:20px;
     height: auto;
+}
+.whiteArrowUp{
+    display: none;
 }

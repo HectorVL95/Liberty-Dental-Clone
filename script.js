@@ -9,6 +9,9 @@ var userTools = document.querySelector('.user-tools')
 var footerUl = document.querySelectorAll('.footer-ul')
 var footerli = document.querySelectorAll('.footer-li')
 var usaMap = document.querySelector('.usa-map')
+var exploreBtn = document.querySelector('.explorebtn-med-ul')
+var medicaidUl = document.querySelector('.med-ul')
+var whiteArrowUp = document.querySelector('.whiteArrowUp')
 
 /*Clicking threelines button */
 threelinesbtn.addEventListener('click', threelinesbtnclick)
@@ -76,6 +79,33 @@ for(let i= 0; i < footerUl.length; i++){
     }
 }
 
+/* Line break for member shine text*/
+function lineBreak(p){
+    if(p.matches){
+        document.querySelector('.shine-text').innerHTML = "Making members shine, <br/> one smile at the time ™"
+    }
+    else{
+        document.querySelector('.shine-text').innerHTML = "Making members shine, one smile at the time ™"
+    }
+}
+var p = window.matchMedia("(min-width:900px)")
+lineBreak(p)
+p.addListener(lineBreak);
+
+
+/*toggle Medicaid UL inside purple boxes*/
+exploreBtn.addEventListener('mouseover', showMedicaidUl)
+function showMedicaidUl(){
+    medicaidUl.style.display='block'
+}
+
+exploreBtn.addEventListener('mouseout', hideMedicaidUl)
+function hideMedicaidUl(){
+    medicaidUl.style.display='none'
+}
+
+
+
 /* Disapearing map */
 function showUsaMap(x){
     if(x.matches){
@@ -91,7 +121,6 @@ showUsaMap(x)
 x.addListener(showUsaMap);
 
 
-/* Disappearing dowpdown arros of UL footer */
 
 /* Disappering footer List items */
 for(let i =0; i < footerli.length; i++){
@@ -107,4 +136,14 @@ for(let i =0; i < footerli.length; i++){
     var e = window.matchMedia("(min-width: 900px)")
     showfooterLi(e)
     e.addListener(showfooterLi);
+}
+
+/* Arrow that takes you up*/
+whiteArrowUp.addEventListener('click', goesUp)
+function goesUp(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
 }

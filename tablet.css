@@ -69,3 +69,8 @@ body{
     position: relative;
     right: 230px;
 }
+
+/*Footer*/
+.whiteArrowUp{
+    display: none;
+}
