@@ -39,9 +39,9 @@ x.addListener(showNavbar);
 userButton.addEventListener('click', showUserTools)
     function showUserTools(){
         userTools.classList.toggle('inactive')
-    }
+    };
 
-
+/* clicking on NaVbAr that shows other NavLinkChild */
 for (let i = 0; i < navLinkItem.length; i++) {
     navLinkItem[i].addEventListener('click', showNavlinkChild)
     function showNavlinkChild(){
@@ -53,6 +53,29 @@ for (let i = 0; i < navLinkItem.length; i++) {
 
 };
 
+/* NavbarLinkChild will show when mouse goes over nav bar items, this only on desktop */
+/*function hoverNavitem(o){
+    for (let i = 0; i < navLinkItem.length; i++) {
+        navLinkItem[i].addEventListener('mouseover', showNavlinkChild)
+        function showNavlinkChild(){
+            if(navLinkItem[i]){
+                navLinkItemChild[i].classList.remove('inactive-child')
+                userTools.classList.add('inactive')
+            }
+        }
+        navLinkItem[i].addEventListener('mouseout', hideNavlinkChild)
+        function hideNavlinkChild(){
+            if(navLinkItem[i]){
+                navLinkItemChild[i].classList.add('inactive-child')
+            }
+        }
+    
+    }
+}
+
+var o = window.matchMedia("(min-width: 900px)")
+hoverNavitem(o)
+o.addListener(hoverNavitem);*/
 
 /* Moving pictures on "Making members shine" */
 const images = ["./assets/family.jpg", "./assets/guywithGirl.jpg", "./assets/otherpic.jpg" ]
@@ -77,7 +100,7 @@ for(let i= 0; i < footerUl.length; i++){
             footerli[i].classList.toggle('inactive')
         }
     }
-}
+};
 
 /* Line break for member shine text*/
 function lineBreak(p){

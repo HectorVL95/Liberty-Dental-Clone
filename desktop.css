@@ -21,7 +21,9 @@
 .nav-bar-menu .inactive{
     display: block;
 }
-
+.nav-link-item p:hover{
+    cursor: pointer;
+}
 .arrow-dowm{
     display: none;
 }
@@ -32,6 +34,21 @@
 .nav-link-item-F a{
     font-size: 1.6rem;
     font-weight: 600;
+}
+.nav-link-itemChild{
+    position: absolute;
+    width: 150px;
+    line-height: unset;
+}
+.nav-link-item li{
+    margin-bottom: 10px;
+}
+.nav-link-itemChild li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+
 }
 /*Making members Shine*/
 .shine{

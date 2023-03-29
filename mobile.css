@@ -122,13 +122,17 @@ a .lock{
     list-style: none;
 }
 .nav-link-itemChild{
-    background-color: aliceblue;
+    background-color:var(--light);
+    line-height: 25px;
     padding: 10px 20px;
     border: 1px gray solid;
-    width: 190px;
+    width: 85%;
     height: auto;
     margin-top: 10px;
     margin-left: 30px;
+}
+.nav-link-itemChild li a{
+    color: black;
 }
 .inactive-child{
     display: none;
@@ -581,6 +585,16 @@ footer{
 }
 .lib--dent p{
     color: white;
+}
+.privacy-notice p{
+    color: white;
+}
+.class-map p{
+    color: white;
+}
+.grievance p{
+    color: white;
+    font-weight: 500;
 }
 .social-media{
     background-color: var(--purple);
