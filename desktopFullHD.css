@@ -1,3 +1,46 @@
 body{
-    zoom: 115%;
+    position: relative;
+    right: 140px;
+}
+header{
+    width: 1080px;
+}
+.making-mem-shine{
+    width: 1080px;
+}
+.lib-cov-news{
+    width: 1080px;
+}
+.news-article{
+    line-height: 30px;
+}
+.news-article a{
+    margin-bottom: 50px;
+}
+.get-most-from-lib{
+    width: 1080px;
+}
+.tools{
+    position: relative;
+    right: 110px;
+}
+.signUp-Quote{
+    width: 1080px;
+}
+.lib-app{
+    width: 1080px;
+}
+.certs{
+    width: 1080px;
+    justify-content: space-between;
+}
+.certs-title h1{
+    font-size: 2.5rem;
+}
+footer{
+    width: 1080px;
+}
+.various-Uls section{
+    margin-right: 35px;
+    margin-left: 35px;
 }

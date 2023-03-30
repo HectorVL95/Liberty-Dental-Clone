@@ -42,11 +42,22 @@ body{
 
 /*Member Tools*/
 .member-tools{
+    align-self: flex-start;
+    
+    
+}
+.member-tools-ul{
+    align-self: flex-start;
     position: relative;
-    right: 170px;
+    right: 120px;
 }
 .tools-image{
     align-items: flex-end;
+    position: relative;
+    left: 50px;
+}
+.purpleBtnDiv{
+    justify-content: flex-start;
 }
 
 /*Provider Tools*/
@@ -59,15 +70,14 @@ body{
     left: 150px;
 }
 .purple-yellow-buttons{
-    justify-content: flex-start;
+    align-self: flex-start;
+    left: 15px;
 }
 .purple-yellow-buttons .purple-button{
     position: relative;
-    right: 120px;
 }
 .purple-yellow-buttons .yellow-button{
     position: relative;
-    right: 230px;
 }
 
 /*Footer*/

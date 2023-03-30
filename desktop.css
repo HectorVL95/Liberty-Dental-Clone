@@ -9,17 +9,32 @@
 .user-button p{
     display: block;
 }
+.user-button:hover{
+    background-color: var(--indigo);
+    cursor: pointer;
+}
 .whiteArrowDown{
     display: block;
 }
-
+.user-tools{
+    left: 35px;
+}
+.user-tools ul li:hover{
+    background-color: var(--purple);
+    cursor: pointer;
+}
 /* Navbar Menu */
 .nav-bar-menu{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15px;
 }
 .nav-bar-menu .inactive{
     display: block;
+}
+.nav-link-item{
+    position: relative;
+    padding-bottom: 10px;
 }
 .nav-link-item p:hover{
     cursor: pointer;
@@ -34,21 +49,34 @@
 .nav-link-item-F a{
     font-size: 1.6rem;
     font-weight: 600;
+    color: black;
+    text-decoration: none;
 }
+.nav-link-item-F a:hover{
+    text-decoration: underline;
+}
+
 .nav-link-itemChild{
     position: absolute;
     width: 150px;
     line-height: unset;
+    clear: both;
+    left: -70px;
+    z-index: 10;
+    padding: unset;
 }
 .nav-link-item li{
-    margin-bottom: 10px;
+    padding: 10px;
+}
+.nav-link-itemChild li:hover{
+    background-color: var(--purple);
 }
 .nav-link-itemChild li a{
     color: black;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.3rem;
-
+    padding: 10px;
 }
 /*Making members Shine*/
 .shine{
@@ -60,6 +88,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+}
+.shine-text{
+    margin-left: 30px;
 }
 .fade{
     -webkit-animation: 1.5s fade;
@@ -114,11 +145,28 @@
 .get-most-from-lib .tools{
     justify-content: center;
 }
+.member-provider-tools{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tools{
+    position: relative;
+    right: 35px;
+}
 .member-tools{
     position: relative;
     left: 10px;
 }
-
+.member-tools-ul{
+    align-self: flex-start;
+    position: unset;
+    right: unset;
+}
+.tools-image{
+    align-items: flex-end;
+    position: unset;
+    left: unset;
+}
 .purple-provider img{
     position: relative;
     right: 150px;
@@ -196,6 +244,12 @@
     display: flex;
     align-self: center;
 }
+.certs-title h1{
+    font-size: 1.5rem;
+}
+.certs-images{
+    display: flex;
+}
 .certs .certs-images img{
     width: 100px;
 }
@@ -211,6 +265,7 @@
 }
 .ldp-logoVert{
     padding: 25px;
+    display: block;
 }
 .various-Uls{
     display: flex;
@@ -245,4 +300,13 @@
 }
 .whiteArrowUp:hover{
     cursor: pointer;
+}
+.privacy-notice a{
+display: block;
+}
+.class-map a{
+display: block;
+}
+.grievance a{
+display: block;
 }

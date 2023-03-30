@@ -12,6 +12,8 @@ var usaMap = document.querySelector('.usa-map')
 var exploreBtn = document.querySelector('.explorebtn-med-ul')
 var medicaidUl = document.querySelector('.med-ul')
 var whiteArrowUp = document.querySelector('.whiteArrowUp')
+var stateSelect = document.querySelector('.state-select')
+var stateGobtn = document.querySelector('.stateGobtn')
 
 /*Clicking threelines button */
 threelinesbtn.addEventListener('click', threelinesbtnclick)
@@ -41,6 +43,30 @@ userButton.addEventListener('click', showUserTools)
         userTools.classList.toggle('inactive')
     };
 
+/* Hovering over user button that will show usertool when in Desktop */
+function hoverOverUserBtn(v){
+    if(v.matches){
+        userButton.addEventListener('mouseover', showUserTools)
+            function showUserTools(){
+                userTools.classList.remove('inactive')
+            };
+
+        userButton.addEventListener('mouseout', hideUsertools)
+            function hideUsertools(){
+                userTools.classList.add('inactive')
+            };
+
+            userTools.addEventListener('mouseover', showUserTools)
+            function showUserTools(){
+                userTools.classList.remove('inactive')
+            };
+    }
+}
+
+var v = window.matchMedia('(min-width: 900px)')
+hoverOverUserBtn(v);
+
+
 /* clicking on NaVbAr that shows other NavLinkChild */
 for (let i = 0; i < navLinkItem.length; i++) {
     navLinkItem[i].addEventListener('click', showNavlinkChild)
@@ -54,7 +80,7 @@ for (let i = 0; i < navLinkItem.length; i++) {
 };
 
 /* NavbarLinkChild will show when mouse goes over nav bar items, this only on desktop */
-/*function hoverNavitem(o){
+function hoverNavitem(o){
     for (let i = 0; i < navLinkItem.length; i++) {
         navLinkItem[i].addEventListener('mouseover', showNavlinkChild)
         function showNavlinkChild(){
@@ -75,7 +101,7 @@ for (let i = 0; i < navLinkItem.length; i++) {
 
 var o = window.matchMedia("(min-width: 900px)")
 hoverNavitem(o)
-o.addListener(hoverNavitem);*/
+o.addListener(hoverNavitem);
 
 /* Moving pictures on "Making members shine" */
 const images = ["./assets/family.jpg", "./assets/guywithGirl.jpg", "./assets/otherpic.jpg" ]
@@ -91,16 +117,9 @@ startCarousel = () => {
     void shine.offsetWidth;
     shine.classList.add('fade');
     if(index > images.length - 1) index = 0;
-}
-   
-for(let i= 0; i < footerUl.length; i++){
-    footerUl[i].addEventListener('click', showfooterLi)
-    function showfooterLi(){
-        if(footerUl[i]){
-            footerli[i].classList.toggle('inactive')
-        }
-    }
 };
+
+
 
 /* Line break for member shine text*/
 function lineBreak(p){
@@ -127,6 +146,56 @@ function hideMedicaidUl(){
     medicaidUl.style.display='none'
 }
 
+/* Lib National Coverage Select */
+stateGobtn.addEventListener('click', takeToState)
+function takeToState(){
+    var value = stateSelect.value
+    if(value == "select-state" )
+    {
+        window.location.href="https://www.libertydentalplan.com/All-States/About-LIBERTY.aspx"
+    }
+    else if(value == "california")
+    {
+        window.location.href="https://www.libertydentalplan.com/LIBERTY-Dental-Plan-of-California/LIBERTY-Dental-Plan-of-California.aspx"
+    }
+    else if(value == "florida")
+    {
+        window.location.href="https://www.libertydentalplan.com/Florida/LIBERTY-Dental-Plan-of-Florida.aspx"
+    }
+    else if(value == "hawaii")
+    {
+        window.location.href="https://www.libertydentalplan.com/Hawaii/LIBERTY-Dental-Plan-of-Hawaii.aspx"
+    }
+    else if(value == "illinois")
+    {
+        window.location.href="https://www.libertydentalplan.com/Illinois/LIBERTY-Dental-Plan-Illinois.aspx"
+    }
+    else if(value == "missouri")
+    {
+        window.location.href="https://www.libertydentalplan.com/Missouri/LIBERTY-Dental-Plan-Of-Missouri.aspx"
+
+    }
+    else if(value == "nevada")
+    {
+        window.location.href="https://www.libertydentalplan.com/Nevada/LIBERTY-Dental-Plan-of-Nevada.aspx"
+    }
+    else if(value == "new jersey")
+    {
+        window.location.href="https://www.libertydentalplan.com/New-Jersey/LIBERTY-Dental-Plan-of-New-Jersey.aspx"
+    }
+    else if(value == "new york")
+    {
+        window.location.href="https://www.libertydentalplan.com/New-York/LIBERTY-Dental-Plan-of-New-York.aspx"
+    }
+    else if(value == "oklahoma")
+    {
+        window.location.href="https://www.libertydentalplan.com/Oklahoma/LIBERTY-Dental-Plan-of-Oklahoma.aspx"
+    }
+    else if(value == "texas")
+    {
+        window.location.href="https://www.libertydentalplan.com/Texas/LIBERTY-Dental-Plan---Texas.aspx"
+    }
+};
 
 
 /* Disapearing map */
@@ -142,6 +211,29 @@ function showUsaMap(x){
 var x = window.matchMedia("(min-width: 900px)")
 showUsaMap(x)
 x.addListener(showUsaMap);
+
+
+/* Show List items in the footer*/
+   
+for(let i= 0; i < footerUl.length; i++){
+    footerUl[i].addEventListener('click', showfooterLi)
+    function showfooterLi(){
+        if(footerUl[i]){
+            footerli[i].classList.toggle('inactive')
+        }
+    };
+
+    function cancelOutClick(l){
+        if(l.matches){
+            footerUl[i].removeEventListener('click', showfooterLi)
+        }
+    }   
+
+    var l = window.matchMedia('(min-width: 900px)')
+    cancelOutClick(l)
+    l.addListener(cancelOutClick)
+
+};
 
 
 

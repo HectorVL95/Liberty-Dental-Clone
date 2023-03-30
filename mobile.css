@@ -79,6 +79,7 @@ a .lock{
     height: auto;
 }
 .userbtn-tools{
+    position: relative;
 }
 .user-button{
     display: flex;
@@ -96,11 +97,13 @@ a .lock{
 /*User tools that pop up after clicking user button*/
 .user-tools{
     background-color: var(--light);
-    padding: 10px;
     line-height: 20px;
     position: absolute;
     border-radius: 4px;
     align-self: center;
+    left: 0px;
+    z-index: 10;
+
 }
 
 .user-tools ul{
@@ -108,7 +111,12 @@ a .lock{
     font-weight: 600;
     text-decoration: underline;
 }
-
+.user-tools ul li{
+    padding: 5px;
+}
+.user-tools ul li a{
+    color: black;
+}
 /* Menu that pops up after clicking a three line button */
 
 .inactive {
@@ -116,7 +124,7 @@ a .lock{
  }
  .nav-bar-menu ul{
     margin-left:  15px;
-    margin-top: 15px;s
+    margin-top: 15px;
  }
 .nav-bar-menu li{
     list-style: none;
@@ -209,6 +217,12 @@ a .lock{
     height: 35px;
     border: #f8f9fa 1px solid;
     border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.purple-boxes a button:hover{
+    cursor: pointer;
 }
 .purple-boxes a button p{
     font-size: 1.6rem;
@@ -221,15 +235,15 @@ a .lock{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .med-ul{
     background-color: var(--light);
     display: flex;
     justify-content: center;
-    padding: 15px;
     width: 100px;
     position: absolute;
-    top: 115px;
+    top: 35px;
     display: none;
 }
 .med-ul ul{
@@ -238,6 +252,18 @@ a .lock{
     font-weight: 600;
     align-self: center;
 
+}
+.medicaid-ul li:hover{
+    background-color: var(--indigo);
+    cursor: pointer;
+}
+.medicaid-ul li{
+    padding: 5px;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.medicaid-ul li a{
+    color: black;
 }
 .purple-boxes select{
     background-color: rgba(0,0,0,0);
@@ -249,6 +275,12 @@ a .lock{
 }
 .purple-boxes select option{
     text-align: center;
+}
+.explore-arrow{
+    width: 20px;
+    height: auto;
+    position: relative;
+    left: 10px;
 }
 
 /*Lib National Coverages and Liberty News*/
@@ -270,11 +302,15 @@ a .lock{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
 }
 .state-selection select{
     width: 170px;
     height: 50px;
     border-radius: 25px;
+}
+.state-selection select:hover{
+    cursor: pointer;
 }
 .state-selection select option{
     text-align: center;
@@ -287,6 +323,9 @@ a .lock{
     border: none;
     color: #f8f9fa;
     font-weight: 700;
+}
+.state-selection button:hover{
+    cursor: pointer;
 }
 .lib-news{
     padding: 10px;
@@ -338,8 +377,17 @@ a .lock{
     border-bottom-right-radius: 30px;
     margin-bottom: 15px;
 }
+.get-most-from-lib .dental-office-tools{
+    background-color: var(--white
+    );
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 15px; 
+}
 .tools{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 .tools h3{
@@ -364,6 +412,10 @@ a .lock{
     height: 80px;
 
 }
+.purpleBtnDiv{
+    display: flex;
+    justify-content: center;
+}
 .tools a .purple-button{
     background-color: var(--purple);
     width: 160px;
@@ -373,9 +425,14 @@ a .lock{
     color: white;
     text-decoration: underline;
     font-weight: 800;
-    margin: 10px 0;
+    align-self: center;
 }
 .member-tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.member-tools-ul{
     display: flex;
     flex-direction: column;
 }
@@ -384,6 +441,7 @@ a .lock{
     flex-direction: column;
     justify-content: center;
     background-color: var(--white);
+    padding: 20px;
 }
 .do-tools{
     display: flex;
@@ -394,10 +452,13 @@ a .lock{
     line-height: 22px;
     font-size: 1.6rem;
 }
+.do-tools-ul h3{
+    font-size: 2.3rem;
+}
 .purple-yellow-buttons{
-    position: relative;
-    right: 30px;    
+    position: relative;   
     display: flex;
+    justify-content: center;
     align-self: center;
 }
 .purple-yellow-buttons a .purple-button{
@@ -409,8 +470,11 @@ a .lock{
     color: white;
     text-decoration: underline;
     font-weight: 800;
-    margin: 10px 0;
+    align-self: center;
 
+}
+.purple-button:hover{
+    cursor: pointer;
 }
 .purple-yellow-buttons a .yellow-button{
     background-color: var(--yellow);
@@ -421,7 +485,10 @@ a .lock{
     color: black;
     text-decoration: underline;
     font-weight: 800;
-    margin: 10px 0;
+    align-self: center;
+}
+.yellow-button:hover{
+    cursor: pointer;
 }
 .tools p{
     color: black;
@@ -543,6 +610,9 @@ a .lock{
     width: 50px;
     height: auto;
 }
+.certs div img:hover{
+    cursor: pointer;
+}
 .certs p{
     color: var(--purple);
     text-align: center;
@@ -570,6 +640,9 @@ footer{
     width: 15px;
     height: auto;
 }
+.ldp-logoVert{
+    display: none;
+}
 .footer-li{
     background-color: var(--light);
     list-style: none;
@@ -585,16 +658,23 @@ footer{
 }
 .lib--dent p{
     color: white;
+    text-decoration: none;
 }
-.privacy-notice p{
+.privacy-notice a{
     color: white;
+    text-decoration: none;
+    display: none;
 }
-.class-map p{
+.class-map a{
     color: white;
+    text-decoration: none;
+    display: none;
 }
-.grievance p{
+.grievance a{
     color: white;
     font-weight: 500;
+    text-decoration: none;
+    display: none;
 }
 .social-media{
     background-color: var(--purple);
