@@ -61,6 +61,14 @@ a .lock{
     display: flex;
     justify-content: space-between;
 }
+.clone-disclaimer p{
+    color: white;
+    font-size: 1.2rem;
+    display: none;
+}
+.original-link{
+    color: white;
+}
 .header-buttons{
     display: flex;
     align-items: center;
